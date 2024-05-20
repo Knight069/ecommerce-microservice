@@ -24,7 +24,7 @@ def create_app():
     bootstrap.init_app(app)
 
     with app.app_context():
-        from .frontend import frontend_blueprint
-        app.register_blueprint(frontend_blueprint)
+        from .frontend import frontend
+        app.register_blueprint(frontend)
 
         return app

@@ -23,3 +23,4 @@ class TestFlaskApiUsingRequests(TestCase):
     def test_product(self):
         response = requests.get('http://192.168.99.100:8081/api/product/product-1')
         self.assertEqual(response.status_code, 200)
+
